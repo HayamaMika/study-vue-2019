@@ -1,6 +1,6 @@
-# npm-boiler-pug-babel-sass
+# yarn-boiler-pug-babel-sass
 
-- npm-boiler-pug-babel-sassリポジトリ
+- yarn-boiler-pug-babel-sassリポジトリ
 
 
 # package
@@ -16,31 +16,31 @@
 
 ### clone
 
-    git clone https://github.com/gurunavi-creators/gnavi-npm-scripts-boiler-pug.git
+    git clone https://github.com/gurunavi-creators/gnavi-yarn-scripts-boiler-pug.git
 
 ### change directory
 
-    cd gnavi-npm-scripts-boiler-pug
+    cd gnavi-yarn-scripts-boiler-pug
 
 ### install
 
-    npm i
+    yarn
 
 ### build
 
-    npm run build
+    yarn build
 
 ## watch command
 
-    npm run watch
+    yarn watch
 
 ## sprite command
 
-    npm run sprite
+    yarn sprite
 
 ## clean dist/、tmp/ command
 
-    npm run clean
+    yarn clean
 
 
 # ルートディレクトリ構成
