@@ -40,6 +40,9 @@
     "spritesmith-cli": "^1.1.2",
     "stylelint": "^9.0.0",
     "stylelint-config-standard": "^18.1.0",
+    "vue": "^2.6.8",
+    "vue-loader": "^15.7.0",
+    "vue-template-compiler": "^2.6.8",
     "webpack": "^4.28.2",
     "webpack-cli": "^3.1.2"
   },

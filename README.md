@@ -81,3 +81,11 @@
 ## セレクター命名方針
 
 - [MindBEMding](https://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/)
+
+
+# 補足
+
+vueのインストール
+npm i -D vue
+npm i -D vue-loader
+npm i -D vue-template-compiler
