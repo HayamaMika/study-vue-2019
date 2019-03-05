@@ -13,6 +13,10 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.vue$/,
+        loader: 'vue-loader'
+      },
+      {
         test: /\.js$/,
         exclude: /node_modules/,
         loader: 'babel-loader',
@@ -30,10 +34,13 @@ module.exports = {
       }
     ]
   },
-  plugins: [
-    new webpack.ProvidePlugin({
-      jQuery: 'jquery',
-      $: 'jquery'
-    })
-  ]
+  resolve: {
+    // import './foo.vue' の代わりに import './foo' と書けるようになる(拡張子省略)
+    extensions: ['.js', '.vue'],
+    alias: {
+      Root: path.join(__dirname, '/src/js/'),
+      // vue-template-compilerに読ませてコンパイルするために必要
+      vue$: 'vue/dist/vue.esm.js',
+    },
+  }
 };
