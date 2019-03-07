@@ -1,5 +1,6 @@
 const path = require('path');
 const webpack = require('webpack');
+const { VueLoaderPlugin } = require("vue-loader");
 
 module.exports = {
   mode: 'production',
@@ -34,6 +35,7 @@ module.exports = {
       }
     ]
   },
+  plugins: [new VueLoaderPlugin()],
   resolve: {
     // import './foo.vue' の代わりに import './foo' と書けるようになる(拡張子省略)
     extensions: ['.js', '.vue'],
