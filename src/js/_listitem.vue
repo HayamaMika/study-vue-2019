@@ -18,6 +18,9 @@
         <span v-for="tag in memo.tags">{{tag}}</span>
       </span>
     </div>
+    <div>
+      <button @click="remove(memo.id)">削除</button>
+    </div>
   </div>
 </template>
 
@@ -25,6 +28,13 @@
 export default {
   props: {
     memo: Object
+  },
+  methods: {
+    remove(id) {
+      // this.$parent(ListViewコンポーネント)に
+      // 'remove' イベントをトリガーする
+      this.$parent.$emit('remove', id)
+    },
   },
 };
 </script>

@@ -17,6 +17,8 @@ module.exports = {
     'strict': 0,
     // console メソッドを警告
     'no-console': 1,
-    'no-magic-numbers': 1
+    'no-magic-numbers': 1,
+    'arrow-body-style': 0,
+    'no-param-reassign': 0,
   },
 };
